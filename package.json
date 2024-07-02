@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon back_end/server.js"
+    "server": "nodemon back_end/server.js",
+    "start": "node back_end/server.js",
+    "build": "npm install && npm install --prefix front_end && npm run build --prefix front_end"
   },
-  "type":"module",
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -17,6 +19,7 @@
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.4.4",
+    "path": "^0.12.7",
     "socket.io": "^4.7.5"
   },
   "devDependencies": {
