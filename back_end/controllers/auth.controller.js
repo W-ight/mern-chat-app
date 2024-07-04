@@ -17,8 +17,8 @@ export const signup=async(req, res)=>
             //HASH PASSWORD HERE
             const salt=await bcrypt.genSalt(10);
             const hashedPassword= await bcrypt.hash(password, salt);
-            const boyProfilePic = `https://robohash.org/NUV.png?set=set3`;
-		    const girlProfilePic = `https://robohash.org/NUV.png?set=set3`;
+            const boyProfilePic = `https://avatar.iran.liara.run/public/boy`;
+		    const girlProfilePic = `https://avatar.iran.liara.run/public/girl`;
 
             const newUser = new User({
                 fullName,
